@@ -1,0 +1,153 @@
+@import "variables.css";
+
+body {
+    margin: 0;
+    background: var(--background);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 600;
+    position: fixed;
+    top: 24px;
+    left: 24px;
+}
+
+h1 {
+    font-size: var(--text-h1);
+    color: var(--text-primary);
+
+}
+
+button {
+    font-size: var(--text-body1);
+    width: 400px;
+    padding: var(--space-sm);
+    border-radius: 32px;
+    border: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+p {
+    font-size: var(--text-body2);
+    color: var(--text-secondary);
+}
+
+.login-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100vh;
+}
+
+.login-main {
+    background: var(--background);
+    flex-grow: 1;
+    flex-basis: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-bg {
+    background: color-mix(in hsl, var(--primary), white 15%);
+    flex-grow: 1;
+    flex-basis: 600px;
+}
+
+.login-flex {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-lg);
+    width: 400px;
+    text-align: center;
+}
+
+.login-flex form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+    margin-bottom: var(--space-xl);
+}
+
+.login-flex .input-wrapper {
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--border);
+    border-radius: var(--space-md);
+    background: var(--input);
+    padding: 0 var(--space-md);
+}
+
+.login-flex .input-wrapper:hover {
+    background: color-mix(in hsl, var(--input), black 5%);
+}
+
+.login-flex .input-wrapper input {
+    border: 0;
+    background: transparent;
+    padding: var(--space-md);
+    flex-grow: 1;
+}
+
+.login-flex .input-wrapper input:focus-visible {
+    outline: 0;
+}
+
+.login-flex .input-wrapper i {
+    font-size: var(--text-body1);
+}
+
+.login-flex label {
+    display: none;
+}
+
+.login-social-btns {
+    display: flex;
+    gap: var(--space-md);
+}
+
+.login-social-btns button {
+    display: flex;
+    justify-content: center;
+    background: transparent;
+    border: 1px solid var(--border);
+    border-radius: var(--space-sm);
+    padding: var(--space-md) 0;
+}
+
+.login-social-btns button:hover {
+    cursor: pointer;
+    background: color-mix(in hsl, var(--background), black 5%);
+}
+
+.login-social-btns i {
+    font-size: 24px;
+    color: var(--primary);
+}
+
+.login-flex span {
+    color: var(--text-secondary);
+    font-weight: 500;
+    font-size: 18px;
+    margin-top: var(--space-2xl);
+}
+
+.login-flex a {
+    color: var(--primary);
+    cursor: pointer;
+}
+
+.btn-primary {
+    color: white;
+    padding: var(--space-md);
+    background: var(--primary);
+    display: flex;
+    justify-content: center;
+}
+
+.btn-primary:hover {
+    cursor: pointer;
+    background: color-mix(in hsl, var(--primary), black 5%);
+}

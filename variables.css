@@ -1,0 +1,39 @@
+:root {
+    font-family: "Inter", sans-serif;
+
+    --primary: #006FEE;
+    --secondary: #7828C8;
+    --default: #F4F4F5;
+    --success: #17C964;
+    --warning: #F5A524;
+    --danger: #F31260;
+
+    --card: #fff;
+    --background: #fafafa;
+    --border: #d4d4d8;
+    --input: #e4e4e7;
+
+    --text-primary: #18181b;
+    --text-secondary: #3f3f46;
+    --text-muted: #71717a;
+
+    --space-xs: 4px;
+    --space-sm: 8px;
+    --space-md: 16px;
+    --space-lg: 24px;
+    --space-xl: 32px;
+    --space-2xl: 48px;
+    --space-3xl: 64px;
+
+    --text-h1: 28.8px;
+    --text-h2: 25.62px;
+    --text-body1: 16px;
+    --text-body2: 14.08px;
+
+    --shadow-md: 0px 5px 12px 0px rgba(0, 0, 0, 0.05);
+    --shadow-lg: 0px 5px 8px 0px rgba(0, 0, 0, 0.15);
+}
+
+body {
+    margin: 0;
+}
