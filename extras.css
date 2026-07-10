@@ -1,0 +1,73 @@
+/* span sin start */
+.item {
+    grid-column: span 2;
+}
+
+/* No media queries */
+.container {
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+/* texto com gradientes */
+.hero-stat-number {
+    font-size: 48px;
+    font-weight: 800;
+    background: linear-gradient(135deg, var(--primary), #a855f7);
+    -webkit-background-clip: text; /* Corta el fondo con la silueta de la letra */
+    -webkit-text-fill-color: transparent; /* Hace el texto transparente para que se vea el fondo */
+}
+
+/* Cambiar el color de la selección de texto */
+::selection {
+    background-color: var(--primary);
+    color: white;
+}
+
+:root {
+    /* light-dark( color_modo_claro, color_modo_oscuro ) */
+    --background: light-dark(#f3f4f6, #111827);
+    --card: light-dark(#ffffff, #1f2937);
+    --text: light-dark(#1f2937, #f9fafb);
+}
+
+/* Perspective on hover */
+.card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    padding: var(--space-md);
+    border-radius: var(--space-sm);
+
+    /*  */
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.4s ease;
+    transform-style: preserve-3d;
+}
+
+.card:hover {
+    /*  */
+    transform: perspective(800px) translateY(-8px) rotateX(8deg) rotateY(-8deg);
+
+    /*  */
+    box-shadow: -10px 20px 30px rgba(0, 0, 0, 0.15),
+    0px 10px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Temas con light-dark() */
+:root {
+    --background: light-dark(#f3f4f6, #111827);
+    --card: light-dark(#ffffff, #1f2937);
+    --text: light-dark(#1f2937, #f9fafb);
+}
+
+body {
+    background-color: var(--background);
+    color: var(--text);
+    /* Esto le avisa al navegador que soporte ambos modos */
+    color-scheme: light dark;
+}
+
+body {
+    background-color: var(--background);
+    color: var(--text);
+    /* Esto le avisa al navegador que soporte ambos modos */
+    color-scheme: light dark;
+}

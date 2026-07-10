@@ -10,6 +10,78 @@ h4 {
 
 nav {
     flex-basis: 260px;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    border-right: 1px solid var(--border);
+}
+
+.nav-menu {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 400px;
+    flex-grow: 1;
+    justify-content: space-between;
+}
+
+nav ul {
+    padding: var(--space-md) var(--space-sm);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+}
+
+nav ul > li {
+    border-radius: var(--space-sm);
+    list-style: none;
+    padding: var(--space-sm) var(--space-md);
+    cursor: pointer;
+    color: var(--text-secondary);
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    font-size: var(--text-body2);
+}
+
+nav ul > li i {
+    font-size: var(--text-h3);
+}
+
+nav ul > li:hover {
+    background: var(--background);
+}
+
+.nav-active {
+    color: white;
+    background: var(--primary);
+}
+
+.nav-active:hover {
+    background: color-mix(in hsl, var(--primary), black 5%);
+}
+
+nav button {
+    border-radius: var(--space-sm);
+    list-style: none;
+    padding: var(--space-sm) var(--space-md);
+    cursor: pointer;
+    color: var(--danger);
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    font-size: var(--text-body2);
+    background: transparent;
+    border: 0;
+}
+
+nav button i {
+    font-size: var(--text-h3);
+}
+
+nav button:hover {
+    background: color-mix(in hsl, var(--danger), white 90%);
 }
 
 .content-wrapper {
@@ -32,6 +104,21 @@ main {
     border-radius: var(--space-sm);
 }
 
+.card-stat {
+    grid-column: span 2;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+    height: fit-content;
+}
+
+.stat-label {
+    color: var(--success);
+    padding: var(--space-xs) var(--space-sm);
+    background: color-mix(in hsl, var(--success), white 80%);
+    border-radius: var(--space-xs);
+}
+
 .card-stat i {
     color: var(--primary);
     padding: var(--space-sm);
@@ -51,36 +138,45 @@ main {
     gap: var(--space-sm);
 }
 
-#stat-ingresos {
-    grid-column: 1 / span 2;
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-sm);
-}
-
-#stat-ventas {
-    grid-column: 3 / span 2;
-    display: grid;
-    grid-template-columns: 0.3fr 1fr;
-    gap: var(--space-sm);
-}
-
-#stat-tickets {
-    grid-column: 5 / span 2;
-}
-
-#stat-clientes {
-    grid-column: 7 / span 2;
-}
 
 #card-ventas {
-    grid-column: 1 / 6;
+    grid-column: span 5;
 }
 
 #card-vendidos {
-    grid-column: 6 / -1;
+    grid-column: span 3;
 }
 
 #tabla-ventas {
     grid-column: 1 / -1;
+}
+
+@media (max-width: 600px) {
+    nav {
+        display: none;
+    }
+
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    .card-stat {
+        grid-column: span 1;
+    }
+
+    #card-ventas {
+        grid-column: span 1;
+    }
+
+    #card-vendidos {
+        grid-column: span 1;
+    }
+
+    #tabla-ventas {
+        grid-column: span 1;
+    }
+}
+
+@media (max-width: 1200px) {
+
 }

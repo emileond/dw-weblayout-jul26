@@ -27,6 +27,7 @@
 
     --text-h1: 28.8px;
     --text-h2: 25.62px;
+    --text-h3: 22.8px;
     --text-body1: 16px;
     --text-body2: 14.08px;
 
@@ -35,5 +36,10 @@
 }
 
 body {
+    margin: 0;
+}
+
+h3 {
+    font-size: var(--text-h3);
     margin: 0;
 }
