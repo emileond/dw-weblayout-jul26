@@ -34,86 +34,160 @@
     </div>
 </nav>
 <div class="content-wrapper">
-    <div>
-        appbar
+    <div class="appbar">
+        <div class="input-search">
+            <i class="ri-search-line"></i>
+            <input type="text" placeholder="Buscar"/>
+        </div>
+        <div class="appbar-menu">
+            <i class="ri-settings-3-line"></i>
+            <i class="ri-notification-3-line"></i>
+            <div class="divider"></div>
+            <img src="https://images.unsplash.com/photo-1728577740843-5f29c7586afe?q=80&w=1160&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"/>
+            <i class="ri-menu-line"></i>
+        </div>
     </div>
-    <header>
-        <h1>Bienvenido</h1>
-    </header>
-    <main>
-        <div id="stat-ingresos" class="card card-stat">
-            <i class="ri-cash-line"></i>
+    <div style="padding: 32px">
+        <header>
             <div>
-                <span>Ingresos</span>
-                <h3>$34,900</h3>
+                <h1>Bienvenido</h1>
+                <p>Esta es tu página de inicio</p>
             </div>
-            <div class="card-stat-legends">
-                <span class="stat-label">+32%</span>
-                <span>Periodo pasado</span>
+            <div class="date-select">
+                <i class="ri-calendar-line"></i>
+                <select>
+                    <option>
+                        Esta semana
+                    </option>
+                    <option selected>
+                        Este mes
+                    </option>
+                    <option>
+                        Este año
+                    </option>
+                </select>
             </div>
-        </div>
-        <div id="stat-ventas" class="card card-stat">
-            <i class="ri-wallet-line"></i>
-            <div>
-                <span>Ventas Totales</span>
-                <h3>$3,502</h3>
+        </header>
+        <main>
+            <div id="stat-ingresos" class="card card-stat">
+                <i class="ri-cash-line"></i>
+                <div>
+                    <span>Ingresos</span>
+                    <h3>$34,900</h3>
+                </div>
+                <div class="card-stat-legends">
+                    <span class="stat-label">+32%</span>
+                    <span>Periodo pasado</span>
+                </div>
             </div>
-            <div class="card-stat-legends">
-                <span class="stat-label">32%</span>
-                <span>Periodo pasado</span>
+            <div id="stat-ventas" class="card card-stat">
+                <i class="ri-wallet-line"></i>
+                <div>
+                    <span>Ventas Totales</span>
+                    <h3>$3,502</h3>
+                </div>
+                <div class="card-stat-legends">
+                    <span class="stat-label">32%</span>
+                    <span>Periodo pasado</span>
+                </div>
             </div>
-        </div>
-        <div id="stat-tickets" class="card card-stat">
-            <i class="ri-receipt-line"></i>
-            <div>
-                <span>Tickets</span>
-                <h3>200</h3>
+            <div id="stat-tickets" class="card card-stat">
+                <i class="ri-receipt-line"></i>
+                <div>
+                    <span>Tickets</span>
+                    <h3>200</h3>
+                </div>
+                <div class="card-stat-legends">
+                    <span class="stat-label">+32%</span>
+                    <span>Periodo pasado</span>
+                </div>
             </div>
-            <div class="card-stat-legends">
-                <span class="stat-label">+32%</span>
-                <span>Periodo pasado</span>
+            <div id="stat-clientes" class="card card-stat">
+                <i class="ri-user-add-line"></i>
+                <div>
+                    <span>Clientes Nuevos</span>
+                    <h3>4,900</h3>
+                </div>
+                <div class="card-stat-legends">
+                    <span class="stat-label">+32%</span>
+                    <span>Periodo pasado</span>
+                </div>
             </div>
-        </div>
-        <div id="stat-clientes" class="card card-stat">
-            <i class="ri-user-add-line"></i>
-            <div>
-                <span>Clientes Nuevos</span>
-                <h3>4,900</h3>
+            <div id="card-ventas" class="card">
+                <h4>
+                    Ventas
+                </h4>
+                <p>Resumen de ventas en los últimos meses</p>
+                <div>Grafica</div>
             </div>
-            <div class="card-stat-legends">
-                <span class="stat-label">+32%</span>
-                <span>Periodo pasado</span>
+            <div id="card-vendidos" class="card">
+                <div class="card-header">
+                    <h4>Mas Vendidos</h4>
+                    <button>
+                        Ver todos
+                    </button>
+                </div>
+                <div class="product-list">
+                    <div class="product-item">
+                        <div class="product-details">
+                            <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"/>
+                            <div class="product-name">
+                                <span>Nombre producto</span>
+                                <span class="subtext">123 ventas</span>
+                            </div>
+                        </div>
+                        <span>
+                        $23,900.00
+                    </span>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-details">
+                            <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"/>
+                            <div class="product-name">
+                                <span>Nombre producto</span>
+                                <span class="subtext">123 ventas</span>
+                            </div>
+                        </div>
+                        <span>
+                        $23,900.00
+                    </span>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-details">
+                            <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"/>
+                            <div class="product-name">
+                                <span>Nombre producto</span>
+                                <span class="subtext">123 ventas</span>
+                            </div>
+                        </div>
+                        <span>
+                        $23,900.00
+                    </span>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-details">
+                            <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"/>
+                            <div class="product-name">
+                                <span>Nombre producto</span>
+                                <span class="subtext">123 ventas</span>
+                            </div>
+                        </div>
+                        <span>
+                        $23,900.00
+                    </span>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div id="card-ventas" class="card">
-            <h4>
-                Ventas
-            </h4>
-            <p>Resumen de ventas en los últimos meses</p>
-            <div>Grafica</div>
-        </div>
-        <div id="card-vendidos" class="card">
-            <h4>Mas Vendidos</h4>
-            <button>
-                Ver todos
-            </button>
-            <ul>
-                <li>Producto 1</li>
-                <li>Producto 2</li>
-                <li>Producto 3</li>
-                <li>Producto 4</li>
-                <li>Producto 5</li>
-            </ul>
-        </div>
-        <div id="tabla-ventas" class="card">
-            <h4>Ultimas Ventas</h4>
-            <p>Listado detallado de las transacciones recientes</p>
-            <button>Ver todo</button>
-            <table>
+            <div id="tabla-ventas" class="card">
+                <h4>Ultimas Ventas</h4>
+                <p>Listado detallado de las transacciones recientes</p>
+                <button>Ver todo</button>
+                <table>
 
-            </table>
-        </div>
-    </main>
+                </table>
+            </div>
+        </main>
+    </div>
 </div>
 </body>
 </html>
