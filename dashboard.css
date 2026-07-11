@@ -4,6 +4,19 @@ body {
     display: flex;
 }
 
+h1 {
+    font-size: 48px;
+    font-weight: 800;
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    -webkit-background-clip: text; /* Corta el fondo con la silueta de la letra */
+    -webkit-text-fill-color: transparent; /* Hace el texto transparente para que se vea el fondo */
+}
+
+#text-select::selection {
+    background-color: var(--secondary);
+    color: white;
+}
+
 h4 {
     margin: 0;
 }

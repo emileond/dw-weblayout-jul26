@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Chat</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:wght@400;700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+          rel="stylesheet">
+</head>
+<body>
+<div class="flex min-h-[100vh]">
+    <nav class="hidden lg:flex flex-col gap-3 w-90 border-r-1 border-gray-300">
+        <img class="w-40"
+             src="https://images.unsplash.com/photo-1496200186974-4293800e2c20?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"/>
+        <div class="flex flex-col grow justify-between p-6">
+            <div class="flex flex-col items-start gap-3">
+                <button class="flex w-full gap-2 items-center p-2 cursor-pointer hover:bg-gray-100 rounded-md">
+                    <i class="ri-home-line text-2xl"></i>
+                    Inicio
+                </button>
+                <button class="flex w-full gap-2 items-center p-2 cursor-pointer hover:bg-gray-100 rounded-md">
+                    <i class="ri-group-line text-2xl"></i>
+                    Clientes
+                </button>
+                <button class="flex w-full gap-2 items-center p-2 cursor-pointer hover:bg-gray-100 rounded-md">
+                    <i class="ri-briefcase-line text-2xl"></i>
+                    Proyectos
+                </button>
+                <button class="flex w-full gap-2 items-center p-2 cursor-pointer hover:bg-gray-100 rounded-md">
+                    <i class="ri-receipt-line text-2xl"></i>
+                    Facturas
+                </button>
+                <button class="flex w-full gap-2 items-center p-2 cursor-pointer hover:bg-gray-100 rounded-md">
+                    <i class="ri-archive-line text-2xl"></i>
+                    Productos
+                </button>
+                <button class="flex w-full gap-2 items-center p-2 cursor-pointer hover:bg-gray-100 rounded-md">
+                    <i class="ri-mail-line text-2xl"></i>
+                    Mensajes
+                </button>
+            </div>
+            <button>Cerrar Sesión</button>
+        </div>
+    </nav>
+    <div class="grow">
+        <div class="flex justify-between grow p-3 border-b-1 border-gray-200">
+            <div class="flex items-center gap-3 px-3 py-2 bg-gray-200 rounded-lg">
+                <i class="ri-search-line"></i>
+                <input placeholder="Buscar" type="text"/>
+            </div>
+            <div class="flex gap-3 items-center">
+                <div class="flex gap-3">
+                    <i class="ri-settings-3-line text-2xl"></i>
+                    <i class="ri-notification-3-line text-2xl"></i>
+                </div>
+                <div class="border-1 py-3 border-gray-200">
+                </div>
+                <img class="w-12 h-12 rounded-full"
+                     src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=928&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"/>
+            </div>
+        </div>
+        <div>
+            <div>Mensajes</div>
+            <div>Chat UI</div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
