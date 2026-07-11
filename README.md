@@ -108,21 +108,32 @@ UI.
 
 ### Extras CSS - Trucos y tips
 
-CSS tiene muchas funcionalidades modernas que facilitan el desarrollo y dan lugar a efectos muy chulos. Aquí tienes algunos de los que veremos en clase:
+CSS tiene muchas funcionalidades modernas que facilitan el desarrollo y dan lugar a efectos muy chulos. Aquí tienes
+algunos de los que veremos en clase:
 
-- **Grid responsive sin media queries** - Usa `repeat(auto-fit, minmax(240px, 1fr))` para crear layouts que se adapten automáticamente al tamaño del contenedor sin necesidad de breakpoints.
-- **Texto con gradientes** - Aplica `background: linear-gradient(...)` junto con `-webkit-background-clip: text` y `-webkit-text-fill-color: transparent` para crear texto con degradados coloridos.
-- **Selección de texto personalizada** - Usa el pseudo-elemento `::selection` para cambiar el color de fondo y texto cuando el usuario selecciona contenido.
-- **Temas dark/light con `light-dark()`** - La función `light-dark(colorClaro, colorOscuro)` permite definir dos colores en una sola línea. Combinada con `color-scheme: light dark`, el navegador aplica automáticamente el modo según las preferencias del sistema.
-- **`color-mix()` para variantes de color** - La función `color-mix(in hsl, var(--primary), white 90%)` genera variantes claras u oscuras de un color sin necesidad de definir tokens extra.
-- **Efecto 3D perspective on hover** - Combina `transform: perspective(800px) rotateX() rotateY()` con `transition` y `box-shadow` para crear un efecto de tarjeta que se inclina en 3D al pasar el ratón.
+- **Grid responsive sin media queries** - Usa `repeat(auto-fit, minmax(240px, 1fr))` para crear layouts que se adapten
+  automáticamente al tamaño del contenedor sin necesidad de breakpoints.
+- **Texto con gradientes** - Aplica `background: linear-gradient(...)` junto con `-webkit-background-clip: text` y
+  `-webkit-text-fill-color: transparent` para crear texto con degradados coloridos.
+- **Selección de texto personalizada** - Usa el pseudo-elemento `::selection` para cambiar el color de fondo y texto
+  cuando el usuario selecciona contenido.
+- **Temas dark/light con `light-dark()`** - La función `light-dark(colorClaro, colorOscuro)` permite definir dos colores
+  en una sola línea. Combinada con `color-scheme: light dark`, el navegador aplica automáticamente el modo según las
+  preferencias del sistema.
+- **`color-mix()` para variantes de color** - La función `color-mix(in hsl, var(--primary), white 90%)` genera variantes
+  claras u oscuras de un color sin necesidad de definir tokens extra.
+- **Efecto 3D perspective on hover** - Combina `transform: perspective(800px) rotateX() rotateY()` con `transition` y
+  `box-shadow` para crear un efecto de tarjeta que se inclina en 3D al pasar el ratón.
 
 **Recursos:**
 
-- [MDN - light-dark()](https://developer.mozilla.org/es/docs/Web/CSS/color_value/light-dark) - Documentación de la función light-dark
-- [MDN - color-mix()](https://developer.mozilla.org/es/docs/Web/CSS/color_value/color-mix) - Documentación de la función color-mix
+- [MDN - light-dark()](https://developer.mozilla.org/es/docs/Web/CSS/color_value/light-dark) - Documentación de la
+  función light-dark
+- [MDN - color-mix()](https://developer.mozilla.org/es/docs/Web/CSS/color_value/color-mix) - Documentación de la función
+  color-mix
 - [CSS-Tricks - Texto con gradiente](https://css-tricks.com/snippets/css/gradient-text/)
-- [CSS Feature Queries](https://developer.mozilla.org/es/docs/Web/CSS/@supports) - Cómo detectar soporte de funciones CSS modernas
+- [CSS Feature Queries](https://developer.mozilla.org/es/docs/Web/CSS/@supports) - Cómo detectar soporte de funciones
+  CSS modernas
 
 ---
 
@@ -135,3 +146,4 @@ Para visualizar los archivos HTML, simplemente abre los `.html` en tu navegador 
 ## Créditos
 
 Curso impartido por **Emilio Sánchez - DW Software**
+Contacto: esanchez@dwtraining.mx
